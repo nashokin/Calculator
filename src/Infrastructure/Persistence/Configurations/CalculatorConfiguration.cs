@@ -1,10 +1,6 @@
-﻿using Calculator.Application.Calculator.Commands;
-using Calculator.Domain.Entities;
+﻿using Calculator.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Calculator.Infrastructure.Persistence.Configurations
 {

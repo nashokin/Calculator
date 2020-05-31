@@ -7,14 +7,14 @@ namespace Calculator.Application.Calculator.Commands
         public CalculatorCommandValidator()
         {
             RuleFor(v => v.Num1)
-                //.NotEmpty();
+                .InclusiveBetween(float.MinValue, float.MaxValue)
                 .NotNull();
 
             RuleFor(v => v.Action)
                 .IsInEnum();
 
             RuleFor(v => v.Num2)
-                //.NotEmpty();
+                .InclusiveBetween(float.MinValue, float.MaxValue)
                 .NotNull();
         }
     }
