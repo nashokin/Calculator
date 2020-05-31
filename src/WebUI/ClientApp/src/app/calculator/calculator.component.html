@@ -1,0 +1,28 @@
+<h1>Calculator</h1>
+
+<p>This component demonstrates calculator component functionality.</p>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="clearfix">
+      <div class="form-group">
+        <label for="num1">First number</label>
+        <input id="num1" type="text" class="form-control item-input-control" [(ngModel)]="calculatorEditor.num1" />
+      </div>
+      <div class="form-group">
+        <label for="action">Action</label>
+        <select id="action" class="form-control" [(ngModel)]="calculatorEditor.selectedAction">
+          <option [value]="key" *ngFor="let key of keys">{{ actions[key] }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="num2">Second number</label>
+        <input id="num2" type="text" class="form-control item-input-control" [(ngModel)]="calculatorEditor.num2" />
+        <button id="calculate" class="btn btn-primary mt-3" (click)="calculateResult()">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <h5>Result: <span class="badge badge-primary">{{ calculatorEditor.result }}</span></h5>
+  </div>
+</div>
