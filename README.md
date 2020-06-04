@@ -4,7 +4,7 @@ This solution is based on Clean Architecture approach from early 2020 conference
 - [Clean Architecture with ASP.NET Core 3.0 - Jason Taylor - NDC Sydney 2019](https://www.youtube.com/watch?v=5OtUm1BLmG0)
 - [Clean Testing: Clean Architecture with .NET Core](https://www.youtube.com/watch?v=2UJ7mAtFuio&t=1560s)
 
-List of files added to the template for calculator endpoint:
+### List of files added to the template for calculator endpoint:
 - .\src\Application\Calculator\Commands\CalculatorCommand.cs
 - .\src\Application\Calculator\Commands\CalculatorCommandValidator.cs
 - .\src\Application\Common\Exceptions\DivisionByZeroException.cs
@@ -17,6 +17,6 @@ List of files added to the template for calculator endpoint:
 - .\src\WebUI\ClientApp\src\app\calculator\calculator.component.ts
 - .\src\WebUI\ClientApp\src\app\calculator\calculator.component.css
 
-Files changed:
+### List of files of changed:
 - .\src\WebUI\Filters\ApiExceptionFilter.cs
 - .\src\WebUI\ClientApp\src\app\app.module.ts
